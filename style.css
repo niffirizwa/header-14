@@ -1,0 +1,104 @@
+body {
+  box-sizing: border-box;
+  background-color: #2f1893;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+
+.purchase-btn {
+  border: none;
+  background-color: #e93a7d;
+  color: white;
+}
+.purchase-btn:hover {
+  background-color: aliceblue;
+  color: #e93a7d;
+  border: transparent;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+a.active,
+a:hover {
+  color: #c0c0c0;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+section {
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.sign-up h1 {
+  color: #2f1893;
+}
+
+.form-check-input:checked {
+  background-color: #0fb156;
+  border: none !important;
+}
+.already-user a {
+  text-decoration: none;
+}
+.sign-up-content {
+  padding: 25px 60px;
+  background-color: #ebeaed;
+}
